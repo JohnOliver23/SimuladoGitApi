@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	margin-left: 20%;
+}
+.GridProject{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	
+	
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 30px;
+	display: none;
+
+}
+.project{
+	margin-top: 20px;
+	margin-bottom: -40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.GridComunity{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 10px;
+	display: none;
+	
+
+}
+.comunity{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.comDates{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.GridCode{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 10px;
+	display: none;
+	
+
+}
+.code{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.name{
+	font-family: 'Roboto', sans-serif;
+	color: #1E90FF;
+	font-size: 1.1em;
+}
+
+.loginColor{
+	color: #1E90FF;
+}
+.starColor{
+	font-family: 'Roboto', sans-serif;
+	color: #1E90FF;
+	font-size: 1.1em;
+}
+.forkColor{
+	font-family: 'Roboto', sans-serif;
+	color: #1E90FF;
+	font-size: 1.1em;
+}
+.fork{
+	margin-left: -60%;
+}
+.comitColor{
+	font-family: 'Roboto', sans-serif;
+	color: #1E90FF;
+	font-size: 1.1em;
+}
+.jsColor{
+	font-weight: 700;
+}
+#btn{
+ background-color: #1E90FF;
+ padding: 10px 20px;
+ color: white
+}
+h2{
+	display: none;
+}
+input{
+	font-size: 1.4em;
+}
