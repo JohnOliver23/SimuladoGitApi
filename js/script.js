@@ -3,6 +3,7 @@ let ip2 = document.querySelector('#ip2')
 let btn = document.querySelector('#btn')
 let project = document.querySelector('.project')
 let comunity = document.querySelector('.comunity')
+
 let code = document.querySelector('.code')
 let contrib
 let cont = 1;
@@ -36,14 +37,19 @@ function geraInfo(value) {
 		contributors(value)
 		comiters(value)
 		languages(value)
+		if(cont==1){
+			project.innerHTML = "";
+			comunity.innerHTML = "";
+			code.innerHTML = "";
+		}
+		
 		project.insertAdjacentHTML('beforeend', str)
+		
 		comunity.insertAdjacentHTML('beforeend', str2)
-		cont++;
+		
 		verificUpdate(data.updated_at)
+		cont++;
 		
-		
-		
-
 		
 		
 })
@@ -70,6 +76,7 @@ function comiters(value) {
 	  .then(resposta => resposta.json()) //.then é equivalente ao sucess, o primeiro recebe a resposta e extrai apenas o json útil dela
 	  .then( function(data){
 	  	console.log(data.length)
+
 	  	code.insertAdjacentHTML('afterbegin', `<div class="comit"><span class="comitColor">${data.length}</span>commits</div>`)
 	  	
 })
@@ -115,6 +122,7 @@ btn.addEventListener('click', function(event){
 
 	geraInfo(ip1.value)
 	geraInfo(ip2.value)
+	cont = 1;
 	$('h2').css('display','block')
 	$('.GridProject').css('display','grid')
 	$('.GridComunity').css('display','grid')
